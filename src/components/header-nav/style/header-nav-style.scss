@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #F6F6F6;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  .sign-up,
+  .overlay__content a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #4F5665;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #F53838;
+  }
+
+  .sign-in{
+    color: #0B132A;
+    font-weight: bold;
+    margin: 30px;
+    cursor: pointer;
+  }
+  
+  .sign-up {
+    padding: 9px 25px;
+    border: 1px solid black;
+    border-color: #f44336;
+    color: #F53855;
+    
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .sign-up:hover {
+    background-color: #FFECEC;
+  }
+  
+  /* Mobile Nav */
+  
+//   .menu {
+//     display: none;
+//   }
+  
+//   .overlay {
+//     height: 100%;
+//     width: 0;
+//     position: fixed;
+//     z-index: 1;
+//     left: 0;
+//     top: 0;
+//     background-color: #24252a;
+//     overflow-x: hidden;
+//     transition: width 0.5s ease 0s;
+//   }
+  
+//   .overlay--active {
+//     width: 100%;
+//   }
+  
+//   .overlay__content {
+//     display: flex;
+//     height: 100%;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//   }
+  
+//   .overlay a {
+//     padding: 15px;
+//     font-size: 36px;
+//     display: block;
+//     transition: color 0.3s ease 0s;
+//   }
+  
+//   .overlay a:hover,
+//   .overlay a:focus {
+//     color: #0088a9;
+//   }
+//   .overlay .close {
+//     position: absolute;
+//     top: 20px;
+//     right: 45px;
+//     font-size: 60px;
+//     color: #edf0f1;
+//   }
+  
+//   @media screen and (max-height: 450px) {
+//     .overlay a {
+//       font-size: 20px;
+//     }
+//     .overlay .close {
+//       font-size: 40px;
+//       top: 15px;
+//       right: 35px;
+//     }
+//   }
+  
+//   @media only screen and (max-width: 800px) {
+//     .nav__links,
+//     .cta {
+//       display: none;
+//     }
+//     .menu {
+//       display: initial;
+//     }
+//   }
+  

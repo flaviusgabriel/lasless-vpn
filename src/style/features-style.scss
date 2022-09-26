@@ -1,0 +1,47 @@
+.features-container {
+    background-color: #FFFFFF;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.titi > h1 {
+    font-family: 'Rubik', sans-serif;
+    color: #0B132A;
+    margin:30px 0 30px 0;
+
+}
+
+.col > p {
+    color: #4F5665;
+    margin:30px 0 30px 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.futures-list-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.futures-list{
+    display: flex;
+    flex-direction: row;
+    margin:5px 0 5px 0;
+    align-items: center;
+}
+
+.futures-list-icon> ion-icon{
+    color: #2FAB73;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.futures-list-text{
+    font-size: 14px;
+}
