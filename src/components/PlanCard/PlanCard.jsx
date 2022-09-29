@@ -1,4 +1,5 @@
 import planimage from "./assets/img/Free.png";
+import "../../style/card-component-style.scss";
 
 const PlanCard = (props) => {
   return (
@@ -7,6 +8,7 @@ const PlanCard = (props) => {
       {/* <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-4"> */}
+
       <div class="card">
         <img
           src={planimage}
@@ -23,7 +25,9 @@ const PlanCard = (props) => {
                 <ion-icon name="checkmark-outline"></ion-icon>
               </div>
               <div className="subscription-text">
-                <p class="card-text text-left">{props.description}</p>
+                <p class="card-subtitle card-text text-left">
+                  {props.description}
+                </p>
               </div>
             </div>
 
@@ -56,7 +60,7 @@ const PlanCard = (props) => {
           </div>
 
           <div className="subscription-name-button">
-            <div className="plan-title-name">{props.secondtitle}</div>
+            <div class="plan-title-name">{props.secondtitle}</div>
             <a href="#" class="btn subscription-buttton">
               Select
             </a>

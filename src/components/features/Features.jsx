@@ -6,16 +6,19 @@ const Features = () => {
     <div className="features-container">
       <div class="container d-flex justify-content-center">
         <div class="row">
-          <div class="col-md-12 col-xs-12 col-lg-6">
-            <img src={image} alt="Feature image" />
+          <div class="col-md-12 col-xs-12 col-lg-6 ">
+            <img class="feture-img" src={image} alt="Feature image" />
           </div>
           <div class="col-md-12 col-xs-12 col-lg-6 titi">
-            <div></div>
-            <h1>We Provide Many Features You Can Use</h1>
-            <p>
-              You can explore the features that we provide with fun and have
-              their own functions each feature.
-            </p>
+            <div class="features-title">
+              <h1>We Provide Many Features You Can Use</h1>
+            </div>
+            <div class="fetures-subtitle">
+              <p>
+                You can explore the features that we provide with fun and have
+                their own functions each feature.
+              </p>
+            </div>
             {/* <div class="col">
               <ion-icon name="checkmark-circle-outline"></ion-icon>
               <p>Powerfull online protection.</p>
