@@ -1,20 +1,80 @@
-.navigation-menu{
-    background-color: #ffffff;
-    border: none;
+// Navigation Style
+
+.navbar{
+    margin: 30px 0 30px 0;
 }
 
-.navlinks{
-    font-family: 'Rubik', sans-serif;
-    color: #4F5665;
-    margin-right: 30px;
-    font-size: 16px;
+.navigation-menu {
+  background-color: #ffffff;
+  border: none;
 }
 
-.sign-in{
-    color: #0B132A;
-    font-size: 16px;
+.navlinks {
+  font-family: "Rubik", sans-serif;
+  color: #4f5665;
+  margin-right: 30px;
+  font-size: 16px;
 }
 
-.sign-up{
-    color: #f53855;
+.sign-in {
+  color: #0b132a;
+  font-size: 16px;
+  
+}
+
+.sign-up {
+  color: #f53855;
+}
+
+.nav-link {
+  color: #4f5665 !important;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+
+}
+
+.btn-link {
+  color: #0b132a !important;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-sign-up {
+  color: #f53855 !important;
+
+  width: 150px;
+  height: 45px;
+
+  border: 1px solid #f53855;
+  border-radius: 50px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #f53855;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

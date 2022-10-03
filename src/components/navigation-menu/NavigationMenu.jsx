@@ -82,7 +82,7 @@ const NavigationMenu = () => {
         </div>
       </nav> */}
 
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navigation-menu">
+      {/* <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navigation-menu">
         <a
           href="/"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
@@ -116,11 +116,9 @@ const NavigationMenu = () => {
             </a>
           </li>
         </ul>
-        {/* us */}
+       
         <div class="col-md-3 text-end">
-          {/* <button type="button" class="btn btn-outline-primary me-2">
-            Sign In
-          </button> */}
+          
           <button type="button" class="btn btn-link me-2 sign-in">
             Sign In
           </button>
@@ -129,7 +127,62 @@ const NavigationMenu = () => {
             Sign Up
           </button>
         </div>
-      </header>
+      </header> */}
+
+      {/* Navigation */}
+      <nav class="navbar navbar-expand-lg  d-flex">
+        <div class="container">
+          <img src={logo} alt="Logo navigation..." />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Features
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Testimonials
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Help
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex header-buttons">
+              <button type="button" class="btn btn-link">
+                Sign In
+              </button>
+              <button class="btn btn-sign-up " type="button">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 };
