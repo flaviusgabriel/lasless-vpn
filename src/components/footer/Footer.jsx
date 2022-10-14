@@ -1,12 +1,20 @@
-import logo from "./assets/img/Logo.png";
-import "../../style/footer.scss";
+import logo from "../../assets/img/Logo.png";
+import IconComponent from "../common/IconComponent/IconComponent";
+import "./footer.scss";
 
 const Footer = () => {
+  const brandsLogo = [
+    { name: "facebook" },
+    { name: "twitter" },
+    { name: "instagram" },
+  ];
+
   return (
     <div class="footer">
       <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 footer-container">
+          {/* <div class="footer-container"> */}
+          <div class="col mb-3 ">
             <a
               href="/"
               class="d-flex align-items-center mb-3 link-dark text-decoration-none"
@@ -17,22 +25,26 @@ const Footer = () => {
               LaslesVPN is a private virtual network that has unique features
               and has high security.
             </p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3">
+            <ul class="list-unstyled d-flex ">
+              {/* <li class="ms-3">
                 <a class="link-dark" href="#">
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
-              </li>
-              <li class="ms-3">
-                <a class="link-dark" href="#">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-              <li class="ms-3">
-                <a class="link-dark" href="#">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
+              </li> */}
+              {brandsLogo.map((item, index) => {
+                return (
+                  <div
+                    class="col d-flex align-items-center justify-content-center "
+                    key={index}
+                  >
+                    <div class="icon-square-social  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      <div>
+                        <IconComponent type={item.name} />
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </ul>
             <p class="text-muted">© 2020LaslesVPN</p>
           </div>
@@ -126,6 +138,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          {/* </div> */}
         </footer>
       </div>
     </div>

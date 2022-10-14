@@ -1,8 +1,10 @@
-import netflix from "./assets/img/Netflix.png";
-import reddit from "./assets/img/Reddit.png";
-import amazon from "./assets/img/Amazon.png";
-import discord from "./assets/img/Discord.png";
-import spotify from "./assets/img/Spotify.png";
+import netflix from "../../assets/img/Netflix.png";
+import reddit from "../../assets/img/Reddit.png";
+import amazon from "../../assets/img/Amazon.png";
+import discord from "../../assets/img/Discord.png";
+import spotify from "../../assets/img/Spotify.png";
+
+import "./brands.scss";
 
 const Brands = () => {
   return (
@@ -15,22 +17,22 @@ const Brands = () => {
             </div>
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <div>
+            <div className="image-wrapper">
               <img src={reddit} alt="Reddit..." />
             </div>
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <div>
+            <div className="image-wrapper">
               <img src={amazon} alt="Amazon..." />
             </div>
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <div>
+            <div className="image-wrapper">
               <img src={discord} alt="Discord..." />
             </div>
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <div>
+            <div className="image-wrapper">
               <img src={spotify} alt="Spotify..." />
             </div>
           </div>

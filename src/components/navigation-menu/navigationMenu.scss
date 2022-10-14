@@ -1,0 +1,86 @@
+@import "../../style/variables.scss";
+
+// Navigation Style
+
+.navigation-menu {
+  .navbar {
+    margin: 30px 0 30px 0;
+  }
+}
+
+.navigation-menu {
+  background-color: $my-white;
+  border: none;
+}
+
+.nav-link {
+  font-family: "Rubik", sans-serif;
+  color: $my-grey;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: $my-red !important;
+}
+
+.sign-in {
+  color: $my-black;
+  font-size: 16px;
+}
+
+.sign-up {
+  color: $my-red;
+}
+
+.nav-link {
+  color: $my-grey !important;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.btn-link {
+  color: $my-black !important;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: $my-grey !important;
+}
+
+.btn-sign-up {
+  color: $my-red !important;
+
+  width: 150px;
+  height: 45px;
+
+  border: 1px solid $my-red;
+  border-radius: 50px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: $my-red;
+}
+
+.btn-sign-up:hover {
+  background-color: $my-icons;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

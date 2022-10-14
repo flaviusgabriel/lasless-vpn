@@ -1,15 +1,12 @@
-import planimage from "./assets/img/Free.png";
+import planimage from "../../assets/img/Free.png";
 import "../../style/card-component-style.scss";
+import ListElement from "../ListElement/ListElement";
+import Button from "../common/Button/Button";
 
 const PlanCard = (props) => {
   return (
     <div>
-      {/* <div class="row"> */}
-      {/* <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4"> */}
-
-      <div class="card">
+      <div class="card d-flex align card-plan mx-auto">
         <img
           src={planimage}
           alt="plan-img"
@@ -20,58 +17,24 @@ const PlanCard = (props) => {
           <h5 class="card-title">{props.title}</h5>
 
           <div className="plan-include">
-            <div className="subscription-details">
-              <div className="subscription-icon">
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </div>
+            <div className="subscription-details d-flex justify-content-center">
               <div className="subscription-text">
-                <p class="card-subtitle card-text text-left">
-                  {props.description}
+                <p class="card-subtitle card-text text-left ">
+                  {props.description.map((description, id) => {
+                    return <ListElement key={id} description={description} />;
+                  })}
                 </p>
               </div>
             </div>
-
-            {/* <div className="subscription-details">
-                  <div className="subscription-icon">
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                  </div>
-                  <div className="subscription-text">
-                    <p class="card-text text-left">Encrypted Connection</p>
-                  </div>
-                </div>
-
-                <div className="subscription-details">
-                  <div className="subscription-icon">
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                  </div>
-                  <div className="subscription-text">
-                    <p class="card-text text-left">No Traffic Logs</p>
-                  </div>
-                </div>
-
-                <div className="subscription-details">
-                  <div className="subscription-icon">
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                  </div>
-                  <div className="subscription-text">
-                    <p class="card-text text-left">Works on All Devices</p>
-                  </div>
-                </div> */}
           </div>
 
-          <div className="subscription-name-button">
+          <div className="subscription-name-button ">
             <div class="plan-title-name">{props.secondtitle}</div>
-            <a href="#" class="btn subscription-buttton">
-              Select
-            </a>
+            <Button styleClass="btn-sign-up" value="Select" />
           </div>
         </div>
       </div>
     </div>
-    //     </div>
-    //   </div>
-    // </div>
-    // </div>
   );
 };
 

@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200;300&family=Rubik:wght@300;500&display=swap');
+@import "../../style/variables.scss";
 
 .features-container {
-    background-color: #FFFFFF;
+    background-color: $my-white;
     align-items: center;
     padding: 30px 10%;
 }
 
 .titi > h1 {
     font-family: 'Rubik', sans-serif;
-    color: #0B132A;
+    color: $my-black;
     margin:30px 0 30px 0;
 
 }
 
 .col > p {
-    color: #4F5665;
+    color: $my-grey;
     margin:30px 0 30px 0;
 
 }
@@ -40,7 +41,7 @@
 }
 
 .futures-list-icon> ion-icon{
-    color: #2FAB73;
+    color: $my-green;
     font-size: 24px;
     margin: 10px;
 }
@@ -52,11 +53,11 @@
 .features-title > h1{
     font-size: 35px;
     font-family: 'Rubik', sans-serif;
-    color: #0B132A;
+    color: $my-black;
 }
 
 .fetures-subtitle > p{
-    color: #4F5665;
+    color: $my-grey;
     font-size: 15px;
     margin-top: 40px;
 }

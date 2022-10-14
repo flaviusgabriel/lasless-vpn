@@ -1,5 +1,6 @@
-import "../../style/comments-carousel.scss";
+import "./comments-carousel.scss";
 import CardComponent from "../cardComponent/CardComponent";
+import Button from "../common/Button/Button";
 
 const CommentsCarousel = () => {
   const testimonials = [
@@ -28,7 +29,7 @@ const CommentsCarousel = () => {
   ];
   return (
     <div class="comments">
-      <div class="container">
+      <div class="container card-carousel">
         <div class="px-4 text-center">
           <div class="comments-title">
             <h1>Trusted by Thousands of Happy Customer</h1>
@@ -40,69 +41,44 @@ const CommentsCarousel = () => {
                 great pleasure when using this crazy feature.
               </p>
             </div>
-            {/* <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div> */}
-
-            {/* <CardComponent /> */}
           </div>
         </div>
         <div class="album py-5  ">
           <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
-              {testimonials.map((comment) => (
-                //   <div class="col-lg-6 mb-6 ">
+              {testimonials.map((comments, id) => (
                 <CardComponent
-                  name={comment.name}
-                  location={comment.location}
-                  rate={comment.rate}
-                  comment={comment.comment}
+                  key={id}
+                  name={comments.name}
+                  location={comments.location}
+                  rate={comments.rate}
+                  comment={comments.comment}
                 />
-                //   </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* <div class="section1">
-        <div class="content">Hello, world!</div>
-        <div class="separator">
-          <div class="bg-light p-5 rounded">
-            <h1>Navbar example</h1>
-            <p class="lead">
-              This example is a quick exercise to illustrate how the top-aligned
-              navbar works. As you scroll, this navbar remains in its original
-              position and moves with the rest of the page.
-            </p>
-            <a
-              class="btn btn-lg btn-primary"
-              href="/docs/5.2/components/navbar/"
-              role="button"
-            >
-              View navbar docs »
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="section2">
-        <div class="content">Hello, world!</div>
-      </div> */}
-
-        <div class="subscription">
-          <div class="row align-items-center g-lg-5 py-5 shadow p-3 mb-5 bg-body rounded">
-            <div class="col-lg-7 text-center text-lg-start">
-              <div class="subs-title">
-                <h1>Subscribe Now for Get Special Features!</h1>
+        <div class="subscription container ">
+          <div class="subscription-section container ">
+            <div class="row d-flex justify-content-center g-lg-3 py-5 shadow p-3 mb-5 bg-body rounded container ">
+              <div class="container col-lg-5 text-center text-lg-start  ">
+                <div class="subs-title">
+                  <h1>Subscribe Now for Get Special Features!</h1>
+                </div>
+                <div class="subs-subtitle">
+                  <p class="col-lg-10 ">
+                    Let's subscribe with us and find the fun.
+                  </p>
+                </div>
               </div>
-              <div class="subs-subtitle">
-                <p class="col-lg-10 fs-4">
-                  Let's subscribe with us and find the fun.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-10 mx-auto col-lg-5 align-center">
-              <div class="subs-but">
-                <button type="button" class="btn float-right">
-                  Subscribe Now
-                </button>
+              <div class="col-md-10 mx-auto col-lg-5 d-flex flex-row-reverse align-items-center">
+                <div class="subs-but">
+                  <Button
+                    styleClass="button-get-started"
+                    value="Subscribe Now"
+                  />
+                </div>
               </div>
             </div>
           </div>

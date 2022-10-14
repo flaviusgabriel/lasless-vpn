@@ -1,0 +1,31 @@
+@import "../../style/variables.scss";
+
+.footer {
+  background-color: $my-footer;
+  position: relative;
+}
+
+.footer-container {
+  padding-top: 170px !important;
+  margin-top: 200px;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon-square-social {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  background-color: $my-white;
+  box-shadow: 0px 4px 9px 4px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding-top: 250px !important;
+  }
+}

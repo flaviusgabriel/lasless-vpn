@@ -1,13 +1,7 @@
-import "../../style/plan-style.scss";
+import "./plan-style.scss";
 import PlanCard from "../PlanCard/PlanCard";
-import planimage from "./assets/img/Free.png";
-
-function Item(props) {
-  return <li>{props.message}</li>;
-}
 
 const Plan = () => {
-  const todos = ["finish doc", "submit pr", "nag dan to review"];
   const plans = [
     {
       title: "Free Plan",
@@ -61,10 +55,11 @@ const Plan = () => {
           </div>
         </div>
         <div class="container">
-          <div class="row">
-            {plans.map((plan) => (
-              <div class="col-lg-4 mb-4">
+          <div class="row ">
+            {plans.map((plan, id) => (
+              <div class="col-lg-4 mb-4 " key={id}>
                 <PlanCard
+                  key={id}
                   title={plan.title}
                   description={plan.description}
                   secondtitle={plan.secondtitle}
@@ -72,11 +67,6 @@ const Plan = () => {
               </div>
             ))}
           </div>
-          {/* <ul>
-            {todos.map((message) => (
-              <Item key={message} message={message} />
-            ))}
-          </ul> */}
         </div>
       </div>
     </div>

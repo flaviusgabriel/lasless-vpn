@@ -1,0 +1,75 @@
+@import "../../style/variables.scss";
+
+.plan-container {
+  background-color: $my-plan;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.plan-title > h1 {
+  font-size: 35px;
+  color: $my-black;
+  font-family: "Rubik", sans-serif;
+}
+
+.plan-subtitle {
+  font-size: 16px;
+  color: $my-grey;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.plan-image {
+  margin: 80px 0 20px 0;
+}
+
+.card {
+  background-color: $my-white;
+  height: 80hw;
+  position: relative;
+}
+
+.card-title {
+  margin-bottom: 30px;
+}
+
+.subscription-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subscription-icon {
+  font-size: 24px;
+  color: $my-green;
+  margin: 10px;
+}
+
+.subscription-name-button {
+  margin-top: 150px;
+}
+
+.plan-title-name {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.subscription-buttton {
+  padding: 9px 25px;
+  border: 1px solid black;
+  border-color: #f44336;
+  color: #f53855;
+
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 35px;
+  color: $my-black;
+  font-family: "Rubik", sans-serif;
+}

@@ -1,0 +1,55 @@
+@import "../../../style/variables.scss";
+
+.btn {
+  background-color: #dad7cd;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  &.btn-primary {
+    color: antiquewhite;
+  }
+  &.btn-sign-in {
+    background-color: $my-white;
+    border: none;
+    color: $my-black;
+    font-family: "Rubik", sans-serif;
+
+    &:hover {
+      color: $my-grey;
+    }
+  }
+  &.btn-sign-up {
+    color: $my-red;
+
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+
+    background-color: $my-white;
+
+    border: 1px solid $my-red;
+    border-radius: 50px;
+
+    &:hover {
+      color: $my-white !important;
+      background-color: $my-red;
+    }
+  }
+
+  &.button-get-started {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: $my-white;
+    width: 250px;
+    height: 60px;
+    background: $my-red;
+    box-shadow: 0px 23px 41px -14px $my-red;
+    border-radius: 10px;
+    &:hover {
+      background-color: $my-hover;
+    }
+  }
+}

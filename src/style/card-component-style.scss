@@ -1,26 +1,52 @@
+@import "../style/variables.scss";
+
 .about {
-    margin: 0;
-    
-    text-align: justify;
+  margin: 0;
+
+  text-align: justify;
+}
+
+.card-plan {
+  min-height: 950px;
+  position: relative;
+}
+
+.card-plan:hover {
+  border: 1px solid $my-red;
+}
+.card-title {
+  font-size: 18px;
+  color: $my-black;
+  font-family: "Rubik", sans-serif;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: $my-grey;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.plan-title-name {
+  font-size: 14px;
+  color: $my-grey;
+  font-family: "Rubik", sans-serif;
+}
+
+.subscription-name-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 70px;
+  // se poate folosi la centrare
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .card-plan {
+    width: 300px;
+    height: auto;
+    right: 100%;
+    transform: translate(58%);
   }
-
-  .card-title{
-    font-size: 18px;
-    color: #0B132A;
-    font-family: 'Rubik', sans-serif;
-  }
-
-  .card-subtitle{
-    font-size: 14px;
-    color: #4F5665;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-  }
-
-  .plan-title-name{
-    font-size: 14px;
-    color: #4F5665;
-    font-family: 'Rubik', sans-serif;
-  }
-
-
+}

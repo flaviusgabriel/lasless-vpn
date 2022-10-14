@@ -1,0 +1,10 @@
+@media only screen and (max-width: 601px) {
+  .image-wrapper {
+    width: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+  }
+}
