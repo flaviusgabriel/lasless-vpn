@@ -1,75 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200;300&family=Rubik:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200;300&family=Rubik:wght@300;500&display=swap");
 @import "../../style/variables.scss";
 
-.features-container {
+.features {
+  &-container {
     background-color: $my-white;
     align-items: center;
     padding: 30px 10%;
-}
+  }
 
-.titi > h1 {
-    font-family: 'Rubik', sans-serif;
-    color: $my-black;
-    margin:30px 0 30px 0;
-
-}
-
-.col > p {
-    color: $my-grey;
-    margin:30px 0 30px 0;
-
-}
-
-.items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.futures-list-container{
+  &-list-container {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.futures-list{
+  &-list {
     display: flex;
     flex-direction: row;
-    margin:5px 0 5px 0;
+    margin: 5px 0 5px 0;
     align-items: center;
-}
+  }
 
-.futures-list-icon> ion-icon{
+  &-list-icon > ion-icon {
     color: $my-green;
     font-size: 24px;
     margin: 10px;
-}
-
-.futures-list-text{
+  }
+  &-list-text {
     font-size: 14px;
-}
-
-.features-title > h1{
+  }
+  &-title > h1 {
     font-size: 35px;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     color: $my-black;
-}
+  }
 
-.fetures-subtitle > p{
+  &-subtitle > p {
     color: $my-grey;
     font-size: 15px;
     margin-top: 40px;
-}
+  }
 
-.feture-img{
-    height: 4   00px;
+  &-img {
+    height: 400px;
     width: auto;
+  }
 }
 
-@media (max-width: 768px) { 
-    .feture-img {
-        height: 300px;
-        width: auto;
+.titi > h1 {
+  font-family: "Rubik", sans-serif;
+  color: $my-black;
+  margin: 30px 0 30px 0;
+}
+
+.col > p {
+  color: $my-grey;
+  margin: 30px 0 30px 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .features {
+    &-img {
+      height: 300px;
+      width: auto;
+      margin-bottom: 40px;
     }
+  }
 }

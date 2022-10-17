@@ -3,11 +3,11 @@
 .footer {
   background-color: $my-footer;
   position: relative;
-}
 
-.footer-container {
-  padding-top: 170px !important;
-  margin-top: 200px;
+  &-container {
+    padding-top: 170px !important;
+    margin-top: 200px;
+  }
 }
 
 .social-media-icons {
@@ -25,7 +25,9 @@
 }
 
 @media (max-width: 768px) {
-  .footer-container {
-    padding-top: 250px !important;
+  .footer {
+    &-container {
+      padding-top: 250px !important;
+    }
   }
 }

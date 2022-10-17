@@ -25,18 +25,22 @@
 
 // Media querry
 @media (max-width: 768px) {
-  .hero-img {
+  .hero{
+  &-img {
     height: 200px;
     width: auto;
   }
 
-  .hero-title > h1 {
+  &-title > h1 {
     font-size: 40px;
+    
   }
 
-  .hero-subtitle > p {
+  &-subtitle > p {
     font-size: 20px;
+    
   }
+}
 
 }
 
@@ -69,18 +73,19 @@
   background-color: $my-icons;
 }
 
+.icon-square > ion-icon {
+  color: $my-red;
+}
+
 .user-location-servers {
   background-color: $my-white;
   box-shadow: 1px 6px 14px 2px rgba(0, 0, 0, 0.4);
 
 }
 
-.icon-square > ion-icon {
-  color: $my-red;
-}
-
-.fe-title {
-  width: 49px;
+.fe{
+  &-title{
+    width: 49px;
   height: 30px;
   font-family: "Rubik";
   font-style: normal;
@@ -88,17 +93,18 @@
   font-size: 25px;
   line-height: 30px;
   color: $my-black;
-}
+  }
 
-.fe-subtitle {
-  width: 92px;
-  height: 30px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: $my-grey;
+  &-subtitle {
+    width: 92px;
+    height: 30px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: $my-grey;
+  }
 }
 
 .divider {

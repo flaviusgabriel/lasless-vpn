@@ -26,11 +26,6 @@ const Footer = () => {
               and has high security.
             </p>
             <ul class="list-unstyled d-flex ">
-              {/* <li class="ms-3">
-                <a class="link-dark" href="#">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li> */}
               {brandsLogo.map((item, index) => {
                 return (
                   <div

@@ -46,30 +46,39 @@
   background-color: coral;
 }
 
-.card-carousel{
-  margin-top: 30px;
-}
-
-.comments-title > h1 {
-  font-size: 35px;
-  color: #0b132a;
-  font-family: "Rubik", sans-serif;
-}
-
-.comments-subtitle {
-  font-size: 16px;
-  color: $my-grey;
-  font-family: "Rubik", sans-serif;
+.card-carousel {
   margin-top: 30px;
 }
 
 .comments {
   background-color: $my-white;
+  &-title > h1 {
+    font-size: 35px;
+    color: $my-black;
+    font-family: "Rubik", sans-serif;
+  }
+
+  &-subtitle {
+    font-size: 16px;
+    color: $my-grey;
+    font-family: "Rubik", sans-serif;
+    margin-top: 30px;
+  }
 }
 
 .subscription {
   margin-top: 100px;
   z-index: 10;
+
+  &-section {
+    position: absolute;
+    z-index: 100;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .subscribe {
@@ -82,30 +91,24 @@
   border-radius: 10px;
 }
 
-.subs-title > h1 {
-  font-size: 35px;
-  color: $my-black;
-  font-family: "Rubik", sans-serif;
-}
+.subs {
+  &-title > h1 {
+    font-size: 35px;
+    color: $my-black;
+    font-family: "Rubik", sans-serif;
+  }
 
-.subs-subtitle {
-  font-size: 16px;
-  color: $my-grey;
-  font-family: "Rubik", sans-serif;
-}
-
-.subscription-section {
-  position: absolute;
-  z-index: 100;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  transform: translate(-50%);
+  &-subtitle {
+    font-size: 16px;
+    color: $my-grey;
+    font-family: "Rubik", sans-serif;
+  }
 }
 
 @media (max-width: 768px) {
-  .subscription-section {
-    margin-top: -100px;
+  .subscription {
+    &-section {
+      margin-top: -100px;
+    }
   }
 }
