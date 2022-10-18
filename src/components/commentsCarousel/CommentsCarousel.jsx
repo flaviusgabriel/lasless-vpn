@@ -59,6 +59,10 @@ const CommentsCarousel = () => {
           </div>
         </div>
 
+        <div>
+          <h1>Try harder!</h1>
+        </div>
+
         <div class="subscription container ">
           <div class="subscription-section container ">
             <div class="row d-flex justify-content-center g-lg-3 py-5 shadow p-3 mb-5 bg-body rounded container ">
