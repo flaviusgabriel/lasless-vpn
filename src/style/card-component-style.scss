@@ -51,9 +51,23 @@
   }
 }
 
+.rate > ion-icon{
+  color: $my-gold;
+  margin-left: 10px;
+}
+
 // Testimonial Card
 .testimonial-card{
   width: 400px;
-  min-height: 300px;
-  
+  min-height: 300px; 
+}
+
+.testimonial-card:hover{
+  border: 1px solid $my-red !important;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card{
+    width: 290px;
+  }
 }
