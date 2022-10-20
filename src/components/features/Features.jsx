@@ -13,12 +13,13 @@ const Features = () => {
     <div className="features-container">
       <div class="container d-flex justify-content-center">
         <div class="row">
-          <div class="col-md-12 col-xs-12 col-lg-6 ">
+          <div class="col-md-12 col-xs-12 col-lg-7 ">
             <img class="features-img" src={image} alt="Feature image" />
           </div>
-          <div class="col-md-12 col-xs-12 col-lg-6 titi">
+          <div class="col-md-12 col-xs-12 col-lg-5 titi">
             <div class="features-title">
-              <h1>We Provide Many Features You Can Use</h1>
+              <h1>We Provide Many </h1>
+              <h1>Features You Can Use</h1>
             </div>
             <div class="features-subtitle">
               <p>

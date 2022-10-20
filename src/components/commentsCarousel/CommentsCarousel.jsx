@@ -88,14 +88,16 @@ const CommentsCarousel = () => {
       <div class="container card-carousel">
         <div class="px-4 text-center">
           <div class="comments-title">
-            <h1>Trusted by Thousands of Happy Customer</h1>
+            <h1>Trusted by Thousands of </h1>
+            <h1>Happy Customer</h1>
           </div>
           <div class="col-lg-6 mx-auto">
             <div class="comments-subtitle">
               <p>
                 These are the stories of our customers who have joined us with
-                great pleasure when using this crazy feature.
+                great
               </p>
+              <p> pleasure when using this crazy feature.</p>
             </div>
           </div>
         </div>

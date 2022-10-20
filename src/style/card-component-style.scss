@@ -9,6 +9,7 @@
 .card-plan {
   min-height: 950px;
   position: relative;
+  border: 1px solid $my-plan-border;
 }
 
 .card-plan:hover {

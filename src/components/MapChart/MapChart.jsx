@@ -41,7 +41,7 @@ const MapChart = () => {
       {data.map(({ city_code, lng, lat, population }) => {
         return (
           <Marker key={city_code} coordinates={[lng, lat]}>
-            <circle fill="#F53" stroke="#FFF" r={popScale(population)} />
+            <circle fill="#F53838" stroke="#FFF" r={popScale(population)} />
           </Marker>
         );
       })}
