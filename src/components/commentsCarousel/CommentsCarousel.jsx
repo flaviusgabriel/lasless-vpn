@@ -131,21 +131,6 @@ const CommentsCarousel = () => {
               </button>
             </div>
           </div>
-
-          {/* <h2>React Slick with CSS Modules</h2>
-          <div>
-            <Slider {...settingsWithModules}>
-              <div>
-                <p>Lorem Ipsum 1</p>
-              </div>
-              <div>
-                <p>Lorem Ipsum 2</p>
-              </div>
-              <div>
-                <p>Lorem Ipsum 3</p>
-              </div>
-            </Slider>
-          </div> */}
         </div>
 
         {/* <Slider {...settings}>

@@ -66,8 +66,39 @@
   border: 1px solid $my-red !important;
 }
 
+.testimonial-name{
+  color: $my-black;
+  
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+.testimonial-location{
+  color: $my-grey;
+  
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.testimonial-rate{
+  color: $my-black;
+  
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.testimonial-comment{
+  color: $my-black;
+  
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .testimonial-card{
     width: 290px;
+    min-height: 430px;
   }
 }
