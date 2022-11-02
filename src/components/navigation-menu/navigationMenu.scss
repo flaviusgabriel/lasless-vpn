@@ -13,7 +13,6 @@
   border: none;
 }
 
-
 .nav-link {
   color: $my-grey !important;
   font-family: "Rubik", sans-serif;
@@ -25,7 +24,7 @@
   color: $my-red !important;
 }
 
-.btn{
+.btn {
   &-link {
     color: $my-black !important;
     font-size: 16px;
@@ -39,42 +38,41 @@
 
   &-sign-up {
     color: $my-red !important;
-  
+
     width: 150px;
     height: 45px;
-  
+
     border: 1px solid $my-red;
     border-radius: 50px;
-  
+
     font-family: "Rubik";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
   }
 
   &-sign-up:hover {
     background-color: $my-icons;
   }
-
 }
 
-.mt-0{
+.mt-0 {
   margin-right: 30px;
 }
 
 @media (max-width: 768px) {
-  .navbar{
-  &-nav {
-    text-align: center;
-  }
+  .navbar {
+    &-nav {
+      text-align: center;
+      
+    }
 
-  &-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    &-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
-}
 }

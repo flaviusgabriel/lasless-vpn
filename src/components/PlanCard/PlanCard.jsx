@@ -29,7 +29,15 @@ const PlanCard = (props) => {
           </div>
 
           <div className="subscription-name-button ">
-            <div class="plan-title-name">{props.secondtitle}</div>
+            <div className="suvscriprion-price-uom d-grid gap-2 d-sm-flex justify-content-sm-center">
+              {/* <div class="plan-title-name">{props.secondtitle}</div>
+              <div className="plan-unit-of-measure">{props.unitOfMeasure}</div> */}
+              {/* <span class="plan-title-name">{props.secondtitle}</span> */}
+              <span class="plan-titleName">{props.secondtitle}</span>
+              <span className="plan-unit-of-measure">
+                {props.unitOfMeasure}
+              </span>
+            </div>
             <Button styleClass="btn-sign-up" value="Select" />
           </div>
         </div>

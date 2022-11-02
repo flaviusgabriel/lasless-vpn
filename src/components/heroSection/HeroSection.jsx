@@ -28,12 +28,12 @@ const HeroSection = () => {
               <div class="hero-subtitle">
                 <p>
                   Provide a network for all your needs with ease and fun using
-                  <strong> LaslesVPN </strong> discover interesting features
-                  from us.
+                  <strong> LaslesVPN </strong>
                 </p>
+                <p> discover interesting features from us.</p>
               </div>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <div class="button-get-started">
+                <div class="button-get-started sp-b">
                   <Button styleClass="button-get-started" value="Get Started" />
                 </div>
               </div>

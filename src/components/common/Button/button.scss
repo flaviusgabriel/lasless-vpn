@@ -37,6 +37,30 @@
       color: $my-white !important;
       background-color: $my-red;
     }
+
+    
+  }
+
+  &.btn-left-right-arrow {
+    background-color: $my-white;
+    border: none;
+    color: $my-red;
+    border: 1px solid $my-red;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &.btn-left-right-arrow:hover {
+    background-color: $my-red;
+    color: $my-white;
   }
 
   &.button-get-started {

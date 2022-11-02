@@ -26,12 +26,17 @@
   color: $my-grey;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
+  
 }
 
 .plan-title-name {
   font-size: 14px;
-  color: $my-grey;
+  color: $my-green;
   font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  
 }
 
 .subscription-name-button {
@@ -89,12 +94,25 @@
 
 .testimonial-comment{
   color: $my-black;
-  
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
+
 a{
   text-decoration: none;
+}
+
+.plan-unit-of-measure{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: $my-grey;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  margin: 0px;
 }
 
 @media (max-width: 768px) {

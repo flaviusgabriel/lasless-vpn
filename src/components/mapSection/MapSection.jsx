@@ -3,20 +3,18 @@ import "./mapSection.scss";
 
 const MapSection = () => {
   return (
-    <div>
+    <div className="map-container">
       <div className="map-container-ss">
         <div class="container">
-          <div class="px-4 py-5 my-5 text-center map-title">
-            <h1>Huge Global Network </h1>
-            <h1>of Fast VPN</h1>
+          <div class="text-center map-title">
+            <h1>Huge Global Network of Fast VPN</h1>
 
             {/* <div class="col-lg-6 mx-auto"> */}
-            <div clas="map-subtitle">
+            <div className="map-subtitle">
               <p>
                 See <strong> LaslesVPN </strong>everywhere to make it easier for
-                you when you move
+                you when you move locations.
               </p>
-              <p>locations.</p>
             </div>
             {/* <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
         </div> */}

@@ -12,6 +12,7 @@ const Plan = () => {
         "Works on All Devices ",
       ],
       secondtitle: "Free",
+      unitOfMeasure: null,
     },
     {
       title: "Standard Plan",
@@ -22,7 +23,8 @@ const Plan = () => {
         "Works on All Devices ",
         "Connect Anyware ",
       ],
-      secondtitle: "$9/mo",
+      secondtitle: "$9",
+      unitOfMeasure: "/ mo",
     },
     {
       title: "Premium Plan",
@@ -34,7 +36,8 @@ const Plan = () => {
         "Connect Anyware ",
         "Get New Features ",
       ],
-      secondtitle: "$12/mo",
+      secondtitle: "$12",
+      unitOfMeasure: "/ mo",
     },
   ];
 
@@ -63,6 +66,7 @@ const Plan = () => {
                   title={plan.title}
                   description={plan.description}
                   secondtitle={plan.secondtitle}
+                  unitOfMeasure={plan.unitOfMeasure}
                 />
               </div>
             ))}

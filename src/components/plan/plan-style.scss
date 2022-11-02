@@ -32,6 +32,15 @@
     margin: 20px;
     color: $my-black;
   }
+
+  &-titleName{
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    color: $my-black;
+    margin: 0;
+  }
 }
 
 .card {

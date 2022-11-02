@@ -11,6 +11,7 @@
     font-size: 50px;
     color: $my-black;
     font-family: "Rubik", sans-serif;
+    width: 85%;
   }
 
   &-subtitle {
@@ -19,6 +20,10 @@
     font-family: "Rubik", sans-serif;
     font-weight: 300;
     margin: 30px 0 30px 0;
+  }
+
+  &-subtitle > p{
+    line-height: 15px;
   }
 }
 
@@ -31,10 +36,16 @@
     width: auto;
   }
 
-  &-title > h1 {
-    font-size: 40px;
-    
+  &-title {
+    width: 100%;
+
+    & > h1 {
+      font-size: 40px;
+      
+    }
   }
+
+  
 
   &-subtitle > p {
     font-size: 20px;
@@ -110,4 +121,8 @@
 .divider {
   border-right: 2px solid $my-divider;
   height: 100px;
+}
+
+.sp-b{
+  margin-top: 30px;
 }
